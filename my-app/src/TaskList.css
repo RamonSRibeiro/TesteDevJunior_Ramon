@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* TaskList Container */
+  div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  h1 {
+    color: #4a90e2;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Button Styles */
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Task List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Task Name with Conditional Styling */
+  li span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  li span.completed {
+    text-decoration: line-through;
+    color: #a0a0a0;
+  }
+  
+  /* Filter Button */
+  button.filter-btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #50e3c2;
+  }
+  
+  button.filter-btn:hover {
+    background-color: #2f9f86;
+  }
+  
